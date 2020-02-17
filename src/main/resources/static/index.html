@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Party Program</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+
+    <h1>The great party program:</h1>
+
+    <div id="formsDiv">
+
+        <h2>Add a guest to the party:</h2>
+        <ul>
+            <li>
+                <label>Guest name: </label>
+                <input id="guestNameInput" type="text">
+            </li>
+            <li>
+                <label>Guest age: </label>
+                <input id="guestAgeInput" type="number">
+            </li>
+            <li>
+                <label>Guest's favourite drink: </label>
+                <input id="guestFavouriteDrinkInput" type="text">
+            </li>
+            <li>
+                <label>Guest's presence in the party: </label>
+                <select id="guestPresenceInput">
+                <option value="true">Already in the party</option>
+                <option value="false">Not yet in the party</option>
+            </select>
+            </li>
+        </ul>
+        <button id="addGuestBtn">Add guest</button>
+        <button id="getGuestsListBtn">Get guests list</button>
+
+    </div>
+    <div>
+        <table id="guestsTable">
+            <thead>
+                <tr>
+                    <th>Guest id</th>
+                    <th>name</th>
+                    <th>age</th>
+                    <th>Favourit drink</th>
+                    <th>Presence status</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
